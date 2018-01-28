@@ -1,81 +1,41 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>tests</title>
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="node_modules/jquery-3.2.1.min.js"></script>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
-</head>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>tests</title>
+      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <script src="node_modules/jquery-3.2.1.min.js"></script>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
 
-<body>
-addss
-<div id="back1" style="background-image:url(img/vinil.jpg);">
-    <div class="row">
-        <div class="col-xs-4">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
-                <a href="#back1" style="color:white"> <button id="mybtn" class="btn btn-primary"> 1 </button></p> </a>
-                <a href="#back"><button  class="btn ">2</button></a>
-           
-        </div>
+    <body>
+    <div id="back1" style="background-image:url(img/vinil.jpg);">
 
-            <div id="main" class="container" style="background-color:white; opacity: 0.4">
-        
-            </div>
-    </div>
-</div>
+        <nav class="navbar navbar-fixed-top sticky-top navbar-light bg-inverse">
+            <a class="navbar-brand" href="#">about </a>
+            <a class="navbar-brand" href="#1">portfolio</a>
+        </nav>
 
-<div id="back" style="background-image:url(img/black.jpg); color: white">
-    <div class="row">
-            <div class="col-xs-4">
-    
-                    <a href="#back1" > <button id="mybtn1" class="btn"> 1 </button></p> </a>
-                    <a href="#back" style="color:white"><button  class="btn  btn-primary ">2</button></a>
-               
-            </div>
-    
-                <div id="main" class="container" style="background-color:white; opacity: 0.4">
+                <div  class="container"  >
+
+                    Start is never too late
 
                 </div>
-        </div>
-</div>
+
+    </div>
+
+
 
 <script>
-  document.body.style.overflow = 'hidden';
-
+document.body.style.overflowX    = 'hidden';
     $( document ).ready(function() {
         doc_h = $(document).height();
-        $("#back").css("height", doc_h);
-        $("#back").css("width", $(document).width()-10);
         $("#back1").css("height", doc_h);
-        $("#back1").css("width", $(document).width()-15);
-
-        $("#mybtn").css("margin-top", doc_h/3);
-        $("#mybtn1").css("margin-top", doc_h/3);
-
-        $(".row").css("padding-top", doc_h/8);
-
-        $(".test").css("color","blue");
-        $(".test").css("height","40%");
-        $(".test").addClass("animated shake");
-        
-        //alert( 'Текущая прокрутка сверху: '  );
     });
-    $(".btn-primary ").click(function(){
-        $(this).addClass("animated shake");
-        //if(hasClass(this,"animated shake")) $(this).removeClass("animated shake"); 
-    });
-    $(".btn-primary ").hover(function() {  
-       // $(this).addClass("animated shake");
-       $(this).removeClass("animated shake");
-        
-    });
-
-    function hasClass(element, className) {
-    var rx = new RegExp('(?:^| )' + className + '(?: |$)');
-    return rx.test(element.className);
-}
 </script>
  
 </body>
