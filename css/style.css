@@ -1,7 +1,18 @@
 .container{
-    background-color:white;
-    opacity: 0.4;
     margin-top: 52px;
+}
+.text-infos{
     font-family: 'Supermercado One', cursive;
     font-size: 20px;
+    color : white;
 }
+
+.img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+#portfolio{
+    background: dimgray;
+}
+

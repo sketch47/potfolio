@@ -9,21 +9,78 @@
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
         <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
 
+        <link rel="stylesheet" href="css/font.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
-    <div id="back1" style="background-image:url(img/vinil.jpg);">
+    <div id="back1" style="background-color: gray">
 
         <nav class="navbar navbar-fixed-top sticky-top navbar-light bg-inverse">
-            <a class="navbar-brand" href="#">about </a>
-            <a class="navbar-brand" href="#1">portfolio</a>
+            <a class="navbar-brand" href="#about">About </a>
+            <a class="navbar-brand" href="#portfolio">Portfolio</a>
+            <a class="navbar-brand" href="#contact">Contacts</a>
         </nav>
 
                 <div  class="container"  >
 
-                    Start is never too late
+                    <div class="text-infos" id="about" >
+                        <h1 class="text-info text-lg-center"> Start is never too late.</h1>
+                        <div class="row" style="margin-top: 50px">
+                        <div class="col-xs-8">
+                        <p> I'm student from 'FreeCodecamp'. It's my first project in web-designed.</p>
+                        </div>
+                            <div class="col-xs-4 text-lg-center " >
+                                <img style="border-radius: 50%;" width="200px" height="200px" src="http://www.lindapark.tv/wp-content/uploads/2017/11/photo-1430760903787-4d91bbf15384.jpeg" >
+                            </div>
+                        </div>
+                    </div>
+                    <p></p>
 
+                    <section id="portfolio">
+                        <h2     class="text-info text-lg-center">Portfolio</h2>
+                        <hr style="height: 5px; color : white"/>
+                        <div class="row text-lg-center">
+                            <div class ="col-sm-5  ">
+                                <h1>name</br></h1>
+                                <img src="" height="400px" width="400px">
+                            </div>
+                            <div class ="col-sm-6  ">
+                                <h1>name</br></h1>
+                                <img src="" height="400px" width="400px">
+                            </div>
+                        </div>
+
+                        <p></p>
+
+                        <div class="row text-lg-center">
+                            <div class ="col-sm-5  ">
+                                <h1>name</br></h1>
+                                <img src="" height="400px" width="400px">
+                            </div>
+                            <div class ="col-sm-6  ">
+                                <h1>name</br></h1>
+                                <img src="" height="400px" width="400px">
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr>
+                    <section id="contact">
+                        <div class="row">
+                            <div class="col-xs-8">
+
+                        </div>
+                            <div class="col-xs-4">
+                                <h3 class="text-info ">Links</h3>
+                                <a class="button social" href="https://www.twitter.com">
+                                    <i class="fa fa-fw fa-twitter"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </section>
                 </div>
 
     </div>
@@ -36,6 +93,15 @@ document.body.style.overflowX    = 'hidden';
         doc_h = $(document).height();
         $("#back1").css("height", doc_h);
     });
+
+var $page = $('html, body');
+
+$('a[href*="#"]').click(function() {
+    $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 1500);
+    return false;
+});
 </script>
  
 </body>
